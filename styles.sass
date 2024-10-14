@@ -1,0 +1,138 @@
+html
+  font-size: 16px
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: "Noto Sans", "Arial, sans-serif"
+  background-color: #ffb6c1
+  color: white
+  line-height: 1.6
+
+header
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 3
+  display: flex
+  justify-content: center
+  background-color: #ff64b4
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+  padding: 8px 64px
+
+  .conteudo_header
+    width: 100%
+    max-width: 1366px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .logo
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 8px
+    color: white
+    h1,img
+      transition: all 0.3s ease
+      &:hover
+        filter: drop-shadow(0 0 5px white)
+
+  nav
+    ul
+      display: flex
+      list-style: none
+      gap: 30px
+
+      li
+        a
+          font-size: 1.5rem
+          text-decoration: none
+          transition: all 0.3s ease
+          color: white
+
+          &:hover
+            filter: drop-shadow(0 0 5px white)
+
+main
+  margin-top: 120px
+
+section
+  display: flex
+  justify-content: center
+  padding: 16px 64px
+  height: fit-content
+
+.conteudo_section
+  max-width: 1366px
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 60px
+
+  p
+    font-size: 1.5rem
+    text-align: justify
+
+.sobre
+  color: #000
+
+  img
+    height: 320px
+
+.conscientizacao
+  background-color: #ff64b4
+
+.dicas
+  .conteudo_section
+    width: 100%
+    justify-content: space-between
+
+  .dica
+    width: 250px
+    height: 250px
+
+    img
+      width: 100%
+      height: 100%
+
+footer
+  display: flex
+  justify-content: center
+  padding: 8px 64px
+  background-color: #ff64b4
+
+.conteudo_footer
+  display: flex
+  width: 100%
+  max-width: 1366px
+  align-items: center
+  justify-content: space-between
+
+  aside
+    display: flex
+
+  .social
+    flex-direction: row
+
+    a
+      figure
+        width: 67px
+        height: 67px
+
+        img
+          width: 100%
+          height: 100%
+
+  .creditos
+    flex-direction: column
+    text-align: center
+    font-size: 1.2rem
+
+  figure
+    display: flex
+    align-items: center
+    justify-content: center
